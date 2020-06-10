@@ -20,6 +20,10 @@ let person3 = {
 console.log(Object.keys(person3))
 console.log(Object.values(person3))
 
+for(let i = 0; i<Objects.keys(person3).length; i++){
+    console.log(Objects.values(person3))
+}
+
 //=======Exercise #2=========//
 /*
 Write an object prototype for a Person that has a name and age, has a
@@ -47,15 +51,15 @@ function PersonB(name, age)
         return `${this.name} is ${this.age} years old.`
     }
     // .addAge method
-    this.addAge = (age=0) => {
-        return `Now ${this.name} is ${this.age + age} years old`
+    this.addAge = (age) => {
+        return `Now ${this.name} is ${this.age + 3} years old`
     }
 }
 let person_c = new PersonB('Celeste Barrios', 23)
 console.log(person_c.printInfo())
 let person_d = new Person('Jojo', 7)
 console.log(person_d.printInfo())
-console.log(person_d.addAge(3))
+console.log(person_d.addAge())
 //
 
 // =============Exercise #3 ============//
